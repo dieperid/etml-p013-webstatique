@@ -1,0 +1,342 @@
+/**
+* Auteur 			: David Dieperink
+* Date 				: 22.09.2020
+* Description : Style CSS pour le site web
+**/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/** Titre centré + police arial **/
+header {
+  width: 100%;
+}
+/** Taille de la navbar **/
+.navbar {
+  width: 100%;
+  height: 111px;
+  background-color:  rgba(0, 0, 0, 0.8);
+}
+.navbarLeft {
+  height: 111px;
+  width: 60%;
+  float: left;
+}
+.navbarRight {
+  float: left;
+  width: 40%;
+  height: 111px;
+}
+/** Texte aligné + police arial + padding + couleur de fond **/
+ul {
+  margin-top: 0px;
+  height: 111px;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0px;
+  overflow: auto;
+}
+/** Logo de la barre de navigation **/
+.logoNavBar {
+  float: left;
+  width: 75px;
+  height: 111px;
+}
+/** Largeur des cases + flotement + séparation des cases **/
+li {
+  box-sizing: border-box;
+  float: left;
+  padding-top: 44px;
+  margin-right: 2%;
+}
+li:first-child {
+  margin-left: 2%;
+}
+/** Display + couleur du texte + alignement centré + padding **/
+li a {
+  text-transform: uppercase;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+}
+/** Couleur qui change sur la barre de navigation en fonction de la page **/
+.active {
+  color: orange;
+}
+/** Emplacement du footer **/
+footer {
+  display: block;
+  height:50px;
+  font-family: arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+/** Mise en place du texte du footer **/
+.pFooter {
+  width: 50%;
+  float: left;
+  text-shadow: right;
+  font-family: arial, sans-serif;
+  text-align: center;
+  color: white;
+}
+/** Alignement du logo copyright **/
+.copyRight {
+  float: left;
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+/** Position de l'image de fond **/
+.bodyIndex {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../../resources/images/fondR6_2.jpg");
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+
+/** --------------------------- Page d'accueil --------------------------- **/
+/** Mise en place du paragraphe de la page d'accueil**/
+#pAccueil {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 80px;
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+/** Titre h2 pour la vido de bande annonce du jeux **/
+#bandeAnnonceH2 {
+  text-align: center;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+  margin-top: 65px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 30px;
+  color: block;
+  text-shadow: 1px 0 0 #FFF, 1px 1px 0 #FFF,
+              0 1px 0 #FFF, -1px 1px 0 #FFF,
+            -1px 0 0 #FFF, -1px -1px 0 #FFF,
+            0 -1px 0 #FFF,  1px -1px 0 #FFF;
+  text-decoration:underline;
+}
+/** Emplacement de la vidéo **/
+.videoBandeAnnonce {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/** ------------------------ Page de présentation ------------------------ **/
+/** Taille de la page de présentation **/
+.pagePresentation {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 2.5%;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+  border-radius: 10px;
+}
+/** Mise en place du texte de présentation partie 1 **/
+.presentationP1 {
+  margin-top: 3%;
+  padding-top: 15px;
+  color: black;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+/** Emplacement du texte de la photo de profil **/
+#pPhotoProfil {
+  margin-bottom: 2px;
+}
+/** Emplacement de la photo de profil **/
+.photoProfil {
+  margin-top: 1%;
+  text-align: center;
+}
+/** Mise en place du texte de présentation partie 2 **/
+.presentationP2 {
+  padding-bottom: 15px;
+  color: black;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+/** ----------------------- Page Rainbow Six Siege ----------------------- **/
+/** Taille des blocks de la page  **/
+.block {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 3%;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  border-radius: 10px;
+}
+/** Position des images de la page **/
+.imagesR6 {
+  float: left;
+  margin-top: 15px;
+}
+.imagesR6_2 {
+  float: left;
+  margin-top: 5px;
+}
+/** Mise en place du texte de présentation du jeux **/
+.pR6debut {
+  padding-top: 15px;
+  margin-left: 135px;
+  text-align: left;
+  font-family: arial, sans-serif;
+}
+.pR6fin {
+  padding-bottom: 15px;
+  margin-left: 135px;
+  text-align: left;
+  font-family: arial, sans-serif;
+}
+/** Dispotion des titres de la page **/
+.titreH1pR6 {
+  padding-top: 15px;
+  font-family: arial, sans-serif;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 135px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.titreH2pR6 {
+  font-family: arial, sans-serif;
+  font-size: 19px;
+  text-align: left;
+  margin-left: 135px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.titreH3pR6 {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 135px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+/** Disposition des autres paragraphes **/
+.pR6 {
+  margin-left: 135px;
+  text-align: left;
+  font-family: arial, sans-serif;
+}
+/** Emplacement du texte pour la bombe **/
+.pBombeR6 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.titreH3pR6 {
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 135px;
+  margin-top: 20px;
+}
+
+/** -------------------------- Page de contact -------------------------- **/
+/** Mise en place du titre **/
+.informationsPersonnelles {
+  margin-top: 3%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+/** Disposition des informations personnelles **/
+.infoPerso {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+/** Disposition du tire du formulaire **/
+.titreFormulaireContact {
+  margin-top: 4%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+/** Mise en place du style du formulaire **/
+.formulaireContact {
+  color: white;
+  font-family: arial, sans-serif;
+}
+/** Disposition du formulaire **/
+form {
+    margin-left: auto;
+    margin-right: auto;
+  	width: 300px;
+  	height: 250px;
+}
+/** Etiquettes et champs **/
+div {
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+/** Etiquettes des champs **/
+label {
+  	float: left;
+  	width: 30%;
+}
+/** Champs du formulaire **/
+input, textarea {
+  	float: left;
+  	margin: 4px;
+    resize: none;
+}
+.button {
+  margin: 0%;
+  height: 30px;
+  width: 70px;
+}
+/** Mise en place du titre pour les informations de contact**/
+.informationsContact {
+  margin-top: 5%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+/** Disposition des informations de contact **/
+.infosContact {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top:18px;
+  padding-bottom: 2px;
+  color: black;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
