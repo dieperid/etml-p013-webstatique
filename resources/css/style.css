@@ -70,11 +70,12 @@ li a {
 }
 /** Emplacement du footer **/
 footer {
+  margin: 0;
   display: block;
   height:50px;
   font-family: arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.8);
-  font-size: 16px;
+  font-size: 20px;
 }
 /** Mise en place du texte du footer **/
 .pFooter {
@@ -84,6 +85,8 @@ footer {
   font-family: arial, sans-serif;
   text-align: center;
   color: white;
+  margin-top: 13.5px;
+  margin-bottom: 13.5px;
 }
 /** Alignement du logo copyright **/
 .copyRight {
@@ -91,6 +94,8 @@ footer {
   width: 50%;
   text-align: center;
   color: white;
+  margin-top: 13.5px;
+  margin-bottom: 13.5px;
 }
 /** Position de l'image de fond **/
 .bodyIndex {
@@ -119,8 +124,8 @@ footer {
   box-sizing: border-box;
   font-family: arial, sans-serif;
   margin-top: 65px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 30px;
   color: block;
   text-shadow: 1px 0 0 #FFF, 1px 1px 0 #FFF,
@@ -131,47 +136,48 @@ footer {
 }
 /** Emplacement de la vidéo **/
 .videoBandeAnnonce {
+  max-width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
-
+video {
+  max-width: 50%;
+}
 /** ------------------------ Page de présentation ------------------------ **/
 /** Taille de la page de présentation **/
 .pagePresentation {
   display: block;
   background-color: rgba(255, 255, 255, 0.7);
-  margin-top: 2.5%;
+  margin-top: 3%;
   margin-left: 200px;
   margin-right: 200px;
   padding-left: 15px;
   padding-right: 15px;
   font-family: arial, sans-serif;
-  font-size: 18px;
-  text-align: left;
   border-radius: 10px;
 }
 /** Mise en place du texte de présentation partie 1 **/
 .presentationP1 {
-  margin-top: 3%;
   padding-top: 15px;
+  padding-bottom: 11px;
   color: black;
   font-family: arial, sans-serif;
   font-size: 18px;
   text-align: left;
 }
 /** Emplacement du texte de la photo de profil **/
-#pPhotoProfil {
-  margin-bottom: 2px;
+.pPhotoProfil {
+  margin-bottom: 0.5%;
 }
 /** Emplacement de la photo de profil **/
 .photoProfil {
-  margin-top: 1%;
   text-align: center;
 }
 /** Mise en place du texte de présentation partie 2 **/
 .presentationP2 {
+  padding-top: 11px;
   padding-bottom: 15px;
   color: black;
   font-family: arial, sans-serif;
@@ -180,6 +186,12 @@ footer {
 }
 
 /** ----------------------- Page Rainbow Six Siege ----------------------- **/
+
+/** Emplacement du texte pour la bombe **/
+.pBombeR6 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 /** Taille des blocks de la page  **/
 .block {
   display: block;
@@ -191,7 +203,6 @@ footer {
   padding-right: 15px;
   font-family: arial, sans-serif;
   font-size: 18px;
-  text-align: justify;
   border-radius: 10px;
 }
 /** Position des images de la page **/
@@ -199,9 +210,12 @@ footer {
   float: left;
   margin-top: 15px;
 }
-.imagesR6_2 {
+.imagesR6second {
   float: left;
-  margin-top: 5px;
+  margin-top: 10px;
+}
+.imagesR6mid {
+  float: left;
 }
 /** Mise en place du texte de présentation du jeux **/
 .pR6debut {
@@ -220,7 +234,7 @@ footer {
 .titreH1pR6 {
   padding-top: 15px;
   font-family: arial, sans-serif;
-  font-size: 25px;
+  font-size: 26px;
   text-align: left;
   margin-left: 135px;
   margin-top: 20px;
@@ -228,7 +242,7 @@ footer {
 }
 .titreH2pR6 {
   font-family: arial, sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   text-align: left;
   margin-left: 135px;
   margin-top: 20px;
@@ -236,7 +250,7 @@ footer {
 }
 .titreH3pR6 {
   font-family: arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
   margin-left: 135px;
   margin-top: 20px;
@@ -248,23 +262,15 @@ footer {
   text-align: left;
   font-family: arial, sans-serif;
 }
-/** Emplacement du texte pour la bombe **/
-.pBombeR6 {
-  margin-top: 20px;
-  margin-bottom: 5px;
+/** Décoration pour les nom des personnages **/
+.nomPerso {
+  text-decoration: underline;
 }
-.titreH3pR6 {
-  font-family: arial, sans-serif;
-  font-size: 18px;
-  text-align: left;
-  margin-left: 135px;
-  margin-top: 20px;
-}
-
 /** -------------------------- Page de contact -------------------------- **/
 /** Mise en place du titre **/
-.informationsPersonnelles {
-  margin-top: 3%;
+.titreInfosPersonnelles {
+  text-decoration: underline;
+  margin-top: 2%;
   color: white;
   font-size: 20px;
   text-align: center;
@@ -272,17 +278,33 @@ footer {
 }
 /** Disposition des informations personnelles **/
 .infoPerso {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding-top: 1px;
-  padding-bottom: 1px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 1%;
+  margin-left: 300px;
+  margin-right: 300px;
   font-family: arial, sans-serif;
-  font-size: 16px;
-  color: black;
+  font-size: 18px;
+  border-radius: 10px;
   text-align: center;
+}
+/** Disposition des paragraphes **/
+.pContact {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+.pContactDebut {
+  text-align: center;
+  padding-top: 15px;
+}
+.pContactFin {
+  text-align: center;
+  padding-bottom: 15px;
 }
 /** Disposition du tire du formulaire **/
 .titreFormulaireContact {
-  margin-top: 4%;
+  text-decoration: underline;
+  margin-top: 2%;
   color: white;
   font-size: 20px;
   text-align: center;
@@ -295,36 +317,38 @@ footer {
 }
 /** Disposition du formulaire **/
 form {
-    margin-left: auto;
-    margin-right: auto;
-  	width: 300px;
-  	height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+	width: 300px;
+	height: 270px;
 }
 /** Etiquettes et champs **/
 div {
-  	display: block;
-  	width: 100%;
-  	height: auto;
+	display: block;
+	width: 100%;
+	height: auto;
 }
 /** Etiquettes des champs **/
 label {
-  	float: left;
-  	width: 30%;
+	float: left;
+	width: 30%;
 }
 /** Champs du formulaire **/
 input, textarea {
-  	float: left;
-  	margin: 4px;
-    resize: none;
+	float: left;
+  margin-top: 0;
+	margin-bottom: 10px;
+  resize: none;
 }
 .button {
   margin: 0%;
   height: 30px;
-  width: 70px;
+  width: 80px;
 }
 /** Mise en place du titre pour les informations de contact**/
-.informationsContact {
-  margin-top: 5%;
+.titreInfosContact {
+  text-decoration: underline;
+  margin-top: 4%;
   color: white;
   font-size: 20px;
   text-align: center;
@@ -332,11 +356,278 @@ input, textarea {
 }
 /** Disposition des informations de contact **/
 .infosContact {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding-top:18px;
-  padding-bottom: 2px;
-  color: black;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 1%;
+  margin-left: 300px;
+  margin-right: 300px;
   font-family: arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  border-radius: 10px;
   text-align: center;
+}
+
+/** -------------------------- Responsive Design -------------------------- **/
+/** Réduction des tailles lorsque l'écran fait moins de 1800px en largeur **/
+@media only screen and (max-width: 1800px) {
+  /** Barre de navigation **/
+  .navbarLeft {
+    width: 50%
+  }
+  .navbarRight {
+    width: 50%;
+  }
+}
+
+/** Réduction des tailles lorsque l'écran fait moins de 1600px en largeur **/
+@media only screen and (max-width: 1600px) {
+  /** Barre de navigation **/
+  .navbarLeft {
+    width: 40%
+  }
+  .navbarRight {
+    width: 60%;
+  }
+  ul {
+    font-size: 20px;
+  }
+
+  /** Footer **/
+  .pFooter {
+    font-size: 20px;
+  }
+  .copyRight {
+    font-size: 20px;
+  }
+}
+
+/** Réduction des tailles lorsque l'écran fait moins de 1400px en largeur **/
+@media only screen and (max-width: 1400px) {
+  /** Barre de navigation **/
+  .navbarLeft {
+    width: 20%
+  }
+  .navbarRight {
+    width: 80%;
+  }
+
+  /** Page d'Accueil **/
+  #pAccueil {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  /** Page Contact **/
+  .infoPerso {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  .infosContact {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+
+/** Réduction des tailles lorsque l'écran fait moins de 1200px en largeur **/
+@media only screen and (max-width: 1200px) {
+  /** Barre de navigation **/
+  .navbarLeft {
+    width: 20%
+  }
+  .navbarRight {
+    width: 80%;
+  }
+
+  /** Page d'Accueil **/
+  #pAccueil {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  #bandeAnnonceH2 {
+    font-size: 28px;
+  }
+  .videoBandeAnnonce {
+    width: 512px;
+    height: 344px;
+  }
+
+  /** Page Présentation **/
+  .pagePresentation {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  /** Page Rainbow Six Siege **/
+  .block {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .imagesR6 {
+      display: none;
+  }
+  .imagesR6second {
+      display: none;
+  }
+  .imagesR6mid {
+      display: none;
+  }
+  .pPhotoBombe {
+    display: none;
+  }
+  .pR6debut {
+      margin-left: 0;
+  }
+  .pR6 {
+    margin-left: 0;
+  }
+  .pR6fin {
+    margin-left: 0;
+  }
+  .titreH1pR6 {
+    margin-left: 0;
+  }
+  .titreH2pR6 {
+    margin-left: 0;
+  }
+  .titreH3pR6 {
+    margin-left: 0;
+  }
+
+  /** Page Contact **/
+  .infoPerso {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .infosContact {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+}
+
+/** Réduction des tailles lorsque l'écran fait moins de 900px en largeur **/
+@media only screen and (max-width: 900px) {
+  /** Barre de navigation **/
+  ul {
+    font-size: 17px;
+  }
+
+  /** Footer **/
+  .pFooter {
+    font-size: 17px;
+  }
+  .copyRight {
+    font-size: 17px;
+  }
+
+  /** Page d'Accueil **/
+  #pAccueil {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .videoBandeAnnonce {
+    width: 384px;
+    height: 344px;
+    margin-bottom: 130px;
+  }
+
+  /** Page Présentation **/
+  .pagePresentation {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /** Page Rainbow Six Siege **/
+  .block {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /** Page Contact **/
+  .infoPerso {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .infosContact {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/** Réduction des tailles lorsque l'écran fait moins de 500px en largeur **/
+@media only screen and (max-width: 500px) {
+  /** Barre de navigation **/
+  ul {
+    height: 111px;
+    font-size: 16px;
+  }
+  li {
+    float: none;
+    padding-top: 0;
+  }
+  li:first-child {
+    margin-top: 1%;
+  }
+  li a {
+    margin-top: 3px;
+    text-align: right;
+    margin-right: 2%;
+  }
+
+  /** Footer **/
+  .pFooter {
+    width: 70%;
+  }
+  .copyRight {
+    width: 30%;
+  }
+
+  /** Page d'Accueil **/
+  #pAccueil {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 18px;
+  }
+  #bandeAnnonceH2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .videoBandeAnnonce {
+    width: auto;
+    height: auto;
+    margin-bottom: 87px;
+  }
+
+  /** Page Présentation **/
+  .pagePresentation {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /** Page Rainbow Six Siege **/
+  .block {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /** Page Contact **/
+  .infoPerso {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .infosContact {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .titreFormulaireContact {
+    font-size: 16px;
+  }
+  .titreInfosPersonnelles {
+    font-size: 16px;
+  }
+  .titreInfosContact {
+    font-size: 16px;
+  }
 }
