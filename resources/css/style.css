@@ -382,16 +382,27 @@ label {
 	width: 30%;
 }
 /** Champs du formulaire **/
-input, textarea {
+input {
 	float: left;
   margin-top: 0;
+  padding-left: 0;
 	margin-bottom: 10px;
   resize: none;
 }
+textarea {
+	float: left;
+  margin-top: 0;
+  padding-left: 0;
+	margin-bottom: 10px;
+  resize: none;
+  width: 245px;
+  height: 50px;
+}
 .button {
-  margin: 0%;
+  margin: 0;
   height: 30px;
-  width: 80px;
+  width: 85px;
+  text-align: center;
 }
 /** Mise en place du titre pour les informations de contact**/
 .titreInfosContact {
@@ -558,7 +569,12 @@ input, textarea {
     margin-left: 100px;
     margin-right: 100px;
   }
-
+  .formulaireContact {
+    height: 460px;
+  }
+  form {
+    margin-right: 330px;
+  }
 }
 
 /** Réduction des tailles lorsque l'écran fait moins de 900px en largeur **/
@@ -613,6 +629,12 @@ input, textarea {
   .infosContact {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .formulaireContact {
+    height: 470px;
+  }
+  form {
+    margin-right: 225px;
   }
 }
 
@@ -707,5 +729,17 @@ input, textarea {
   }
   .titreInfosContact {
     font-size: 16px;
+    width: 375px;
+  }
+  .formulaireContact {
+    height: 485px;
+  }
+  textarea {
+    width: 245px;
+    height: 50px;
+  }
+  form {
+    margin-left: 64px;
+    margin-right: 31px;
   }
 }
