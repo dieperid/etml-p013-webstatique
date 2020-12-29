@@ -418,7 +418,7 @@ input, textarea {
 /** -------------------------- Responsive Design -------------------------- **/
 @media only screen and (max-width: 1900px) {
   form {
-    height: 350px;
+    height: 400px;
   }
 }
 /** Réduction des tailles lorsque l'écran fait moins de 1800px en largeur **/
