@@ -369,7 +369,7 @@ form {
   margin-left: auto;
   margin-right: auto;
 	width: 300px;
-	height: 300px;
+	height: 270px;
 }
 /** Etiquettes et champs **/
 div {
@@ -416,7 +416,7 @@ input, textarea {
 }
 
 /** -------------------------- Responsive Design -------------------------- **/
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1900px) {
   form {
     height: 350px;
   }
