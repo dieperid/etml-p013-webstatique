@@ -420,6 +420,9 @@ input, textarea {
   form {
     height: 420px;
   }
+  .formulaireContact {
+    height: 420px;
+  }
 }
 /** Réduction des tailles lorsque l'écran fait moins de 1800px en largeur **/
 @media only screen and (max-width: 1800px) {
