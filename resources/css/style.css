@@ -64,6 +64,10 @@ li a {
   text-decoration: none;
   font-family: arial, sans-serif;
 }
+/** Couleur qui change sur la barre de navigation en passant sur une page **/
+li a:hover {
+  color: orange;
+}
 /** Couleur qui change sur la barre de navigation en fonction de la page **/
 .active {
   color: orange;
@@ -81,7 +85,6 @@ footer {
 .pFooter {
   width: 50%;
   float: left;
-  text-shadow: right;
   font-family: arial, sans-serif;
   text-align: center;
   color: white;
@@ -127,7 +130,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
-  color: block;
   text-shadow: 1px 0 0 #FFF, 1px 1px 0 #FFF,
               0 1px 0 #FFF, -1px 1px 0 #FFF,
             -1px 0 0 #FFF, -1px -1px 0 #FFF,
@@ -186,7 +188,6 @@ video {
 }
 
 /** ----------------------- Page Rainbow Six Siege ----------------------- **/
-
 /** Emplacement du texte pour la bombe **/
 .pBombeR6 {
   margin-top: 0;
@@ -266,6 +267,54 @@ video {
 .nomPerso {
   text-decoration: underline;
 }
+
+/** -------------------------- Page d'analyse --------------------------- **/
+/** Dimension et caractéristique de la page **/
+.analyseQuestion {
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  overflow: auto;
+}
+/** Dimension du texte et des images **/
+.questionsAnalyse {
+  width: 611px;
+  margin-left: 5px;
+}
+/** Dimension du bloc numéro 1 **/
+.quest1 {
+  height: 288px;
+  float: left;
+}
+/** Dimension du bloc numéro 2 **/
+.quest2 {
+  height: 288px;
+  margin-left: 271px;
+  margin-bottom: 25px;
+  float: left;
+}
+/** Dimension du bloc numéro 3 **/
+.quest3 {
+  margin-top: 64px;
+  margin-bottom: 25px;
+  float: left;
+}
+/** Dimension du bloc numéro 4 **/
+.quest4 {
+  height: 348.5px;
+  margin-left: 271px;
+  float: left;
+}
+/** Dimension du bloc numéro 5 **/
+.quest5 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 /** -------------------------- Page de contact -------------------------- **/
 /** Mise en place du titre **/
 .titreInfosPersonnelles {
@@ -325,7 +374,6 @@ form {
 /** Etiquettes et champs **/
 div {
 	display: block;
-	width: 100%;
 	height: auto;
 }
 /** Etiquettes des champs **/
@@ -374,9 +422,6 @@ input, textarea {
   .navbarLeft {
     width: 50%
   }
-  .navbarRight {
-    width: 50%;
-  }
 }
 
 /** Réduction des tailles lorsque l'écran fait moins de 1600px en largeur **/
@@ -384,9 +429,6 @@ input, textarea {
   /** Barre de navigation **/
   .navbarLeft {
     width: 40%
-  }
-  .navbarRight {
-    width: 60%;
   }
   ul {
     font-size: 20px;
@@ -406,9 +448,6 @@ input, textarea {
   /** Barre de navigation **/
   .navbarLeft {
     width: 20%
-  }
-  .navbarRight {
-    width: 80%;
   }
 
   /** Page d'Accueil **/
@@ -433,9 +472,6 @@ input, textarea {
   /** Barre de navigation **/
   .navbarLeft {
     width: 20%
-  }
-  .navbarRight {
-    width: 80%;
   }
 
   /** Page d'Accueil **/
@@ -492,6 +528,18 @@ input, textarea {
   .titreH3pR6 {
     margin-left: 0;
   }
+  /** Page Analyse **/
+  .analyseQuestion {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .quest1, .quest2, .quest3, .quest4 {
+    float: none;
+    margin-left: 0;
+  }
+  .quest3 {
+    margin-top: 0;
+  }
 
   /** Page Contact **/
   .infoPerso {
@@ -539,6 +587,12 @@ input, textarea {
 
   /** Page Rainbow Six Siege **/
   .block {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /** Page Analyse **/
+  .analyseQuestion {
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -612,6 +666,22 @@ input, textarea {
     margin-right: 20px;
   }
 
+  /** Page Analyse **/
+  .analyseQuestion {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .questionsAnalyse {
+    width: 335px;
+    margin-left: 0;
+  }
+  .quest1, .quest2 {
+    height: 230px;
+  }
+  .quest3 {
+    margin-top: 0;
+  }
+  
   /** Page Contact **/
   .infoPerso {
     margin-left: 20px;
