@@ -372,10 +372,10 @@ form {
 	height: 270px;
 }
 /** Etiquettes et champs **/
-div {
+/* div {
 	display: block;
 	height: auto;
-}
+} */
 /** Etiquettes des champs **/
 label {
 	float: left;
@@ -395,7 +395,7 @@ textarea {
   padding-left: 0;
 	margin-bottom: 10px;
   resize: none;
-  width: 245px;
+  width: 250px;
   height: 50px;
 }
 .button {
@@ -426,21 +426,18 @@ textarea {
   text-align: center;
 }
 
-/** -------------------------- Responsive Design -------------------------- **/
-@media only screen and (max-width: 1920px) {
-  form {
-    height: 500px;
-  }
-  .formulaireContact {
-    height: 420px;
-  }
+
+
+h2.titreInfosContact {
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media only screen and (max-width: 1906px) {
-  form {
-    height: 270px;
-  }
+/** -------------------------- Responsive Design -------------------------- **/
+@media only screen and (max-width: 1920px) {
+ 
 }
+
 /** Réduction des tailles lorsque l'écran fait moins de 1800px en largeur **/
 @media only screen and (max-width: 1800px) {
   /** Barre de navigation **/
@@ -738,7 +735,7 @@ textarea {
     width: 375px;
   }
   .formulaireContact {
-    height: 400px;
+    height: 300px;
   }
   textarea {
     width: 245px;
