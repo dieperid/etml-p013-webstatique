@@ -427,12 +427,21 @@ textarea {
 }
 
 /** -------------------------- Responsive Design -------------------------- **/
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1908px) {
   form {
     height: 420px;
   }
   .formulaireContact {
     height: 420px;
+  }
+}
+
+@media only screen and (max-width: 1903px) {
+  form {
+    height: 390px;
+  }
+  .formulaireContact {
+    height: 390px;
   }
 }
 /** Réduction des tailles lorsque l'écran fait moins de 1800px en largeur **/
