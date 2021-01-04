@@ -321,7 +321,6 @@ video {
   text-decoration: underline;
   margin-top: 2%;
   color: white;
-  font-size: 20px;
   text-align: center;
   font-family: arial, sans-serif;
 }
@@ -355,61 +354,46 @@ video {
   text-decoration: underline;
   margin-top: 2%;
   color: white;
-  font-size: 20px;
   text-align: center;
   font-family: arial, sans-serif;
 }
-/** Mise en place du style du formulaire **/
-.formulaireContact {
+
+div.formulaireContact-group {
+  /** Mise en place du style du formulaire **/
   color: white;
   font-family: arial, sans-serif;
-}
-/** Disposition du formulaire **/
-form {
+  /** Disposition du formulaire **/
   margin-left: auto;
   margin-right: auto;
-	width: 300px;
-	height: 270px;
+  text-align:left;
 }
-/** Etiquettes et champs **/
-/* div {
-	display: block;
-	height: auto;
-} */
-/** Etiquettes des champs **/
-label {
-	float: left;
-	width: 30%;
+
+#formulaireContact-form{
+  margin-left: auto;
+  margin-right: auto;
+  width: 246px;
 }
+
+.form-group {
+width: 50px;
+}
+
 /** Champs du formulaire **/
 input {
-	float: left;
-  margin-top: 0;
-  padding-left: 0;
-	margin-bottom: 10px;
-  resize: none;
+  margin-top: 5px;
+	margin-bottom: 15px;
 }
 textarea {
-	float: left;
-  margin-top: 0;
-  padding-left: 0;
 	margin-bottom: 10px;
-  resize: none;
   width: 250px;
   height: 50px;
 }
-.button {
-  margin: 0;
-  height: 30px;
-  width: 85px;
-  text-align: center;
-}
+
 /** Mise en place du titre pour les informations de contact**/
 .titreInfosContact {
   text-decoration: underline;
-  margin-top: 4%;
+  margin-top: 2%;
   color: white;
-  font-size: 20px;
   text-align: center;
   font-family: arial, sans-serif;
 }
@@ -724,16 +708,7 @@ h2.titreInfosContact {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .titreFormulaireContact {
-    font-size: 16px;
-  }
-  .titreInfosPersonnelles {
-    font-size: 16px;
-  }
-  .titreInfosContact {
-    font-size: 16px;
-    width: 375px;
-  }
+
   .formulaireContact {
     height: 300px;
   }
