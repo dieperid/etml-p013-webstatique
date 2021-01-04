@@ -436,11 +436,6 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 1905px) {
-  .formulaireContact {
-    height: 390px;
-  }
-}
 /** Réduction des tailles lorsque l'écran fait moins de 1800px en largeur **/
 @media only screen and (max-width: 1800px) {
   /** Barre de navigation **/
