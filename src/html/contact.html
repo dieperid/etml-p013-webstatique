@@ -23,14 +23,13 @@
             <li><a href="presentation.html">Présentation</a></li>
             <li><a href="rainbowSixSiege.html">Rainbow Six Siege</a></li>
             <li><a href="analyse.html">Analyse</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a class="active" href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-      <div class="titreInfosPersonnelles">
-        <h2>Informations Personnelles</h2>
-      </div>
+      <div>
+    <h2 class="titreInfosPersonnelles">Informations Personnelles</h2>
       <div class="infoPerso">
         <p class="pContactDebut">David Dieperink</p>
         <p class="pContact">17 ans (06.10.2003)</p>
@@ -38,43 +37,39 @@
         <p class="pContact">1188 Gimel</p>
         <p class="pContactFin">Je suis actuellement en apprentissage en tant qu'informaticien à l'Ecole Technique des métiers de Lausanne.</p>
       </div>
-
-      <div class="titreFormulaireContact">
-        <h2>Formulaire de Contact</h2>
-      </div>
-      <div class="formulaireContact">
-        <form action="mailto:dieperid@sefanet.ch">
-    			<div>
+    </div>
+      <div class="formulaireContact-group">
+        <h2 class="titreFormulaireContact">Formulaire de Contact</h2>
+        <form id="formulaireContact-form" action="mailto:dieperid@sefanet.ch">
+    			<div class="form-group"> 
     				<label for="fname">Prénom</Label>
-    				<input id="fname" name="fname" type="text">
+    				<input  class="form-control" type="text" id="fname" required> 
     			</div>
-    			<div>
+    			<div class="form-group">
     				<label for="lname">Nom</Label>
-    				<input id="lname" name="lname" type="text">
+    				<input  class="form-control" type="text" id="lname" required>
     			</div>
-    			<div>
+    			<div class="form-group">
     				<label for="address">Adresse</Label>
-    				<input id="address" name="address" type="text">
+    				<input  class="form-control" type="text" id="address">
+          </div>
+    			<div class="form-group">
+            <label for="npa">NPA</Label>
+    				<input  class="form-control" type="text" id="npa">
     			</div>
-    			<div>
-    				<label for="npa">NPA</Label> <br>
-    				<input id="npa" name="npa" type="text">
+    			<div class="form-group">
+    				<label for="inputLocation">Localité</Label>
+    				<input type="text" class="form-control" id="location" >
     			</div>
-    			<div>
-    				<label for="location">Localité</Label>
-    				<input id="location" name="location" type="text">
-    			</div>
-    			<div>
-    				<label for="mail">Email</Label>
-    				<input id="mail" name="mail" type="text">
-    			</div>
-    			<div>
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="username@example.com">
+          </div>
+    			<div class="form-group">
     				<label for="remark">Remarque</Label>
-    				<textarea id="remark" name="remark"></textarea>
+    				<textarea  class="form-control" id="remark" required></textarea>
     			</div>
-    			<div>
-    				<input class="button" type="submit" value="Envoyer">
-    			</div>
+    			<input class="button" type="submit" value="Envoyer">
     		</form>
       </div>
       <div>
